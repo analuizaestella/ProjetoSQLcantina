@@ -75,13 +75,36 @@ desc tbVendas;
 
 insert into tbFuncionarios(nome,email,cpf,sexo,salario,nascimento,telCelular)values('Amarildo Santiago','amarildo@santiago','445.124.758-56','M','1500.50','1999/06/25','94241-2233');
 
+insert into tbFuncionarios(nome,email,cpf,sexo,salario,nascimento,telCelular)values('Ana Francisco Estella','Ana@gmail.com','486.231.738-30','F','5000.00','2005/10/08','94847-7529');
+
 insert into tbFornecedores(nome,email,cnpj)values('Oboticario','florestaverde@gmail.com','51.205.170/0001-43');
 
 insert into tbFornecedores(nome,email,cnpj)values('Casa do churros','churrosquentinhos@gmail.com','22.544.372/0001-11');
 
 insert into tbClientes(nome, email, telCelular)values('Joana','joana21@gmail.com','55555-2222');
 
+insert into tbClientes(nome, email, telCelular)values('Bruna','brubrulinda@gmail.com','92565-2554');
+
+insert into tbUsuarios(nome,senha,codFunc)values('Amarildo.santiago','12345678',1);
+
+insert into tbUsuarios(nome,senha,codFunc)values('Ana.estella','1234555',2);
+
+insert into tbProdutos (descricao,quantidade,valor,validade,dataEntrada,horaEntrada,codForn)value('Pao de queijo duduxo','16','5.00','2024/08/17','2024/08/17','12:00:00','2');
+
+insert into tbProdutos (descricao,quantidade,valor,validade,dataEntrada,horaEntrada,codForn)value('Perfume Lily','25','139.99','2024/11/25','2024/08/08','18:25:00','1');
+
+insert into tbProdutos (descricao,quantidade,valor,validade,dataEntrada,horaEntrada,codForn)value('Perfume Egeo Choc','20','119.99','2024/12/22','2024/08/08','18:25:00','1');
+
+insert into tbProdutos (descricao,quantidade,valor,validade,dataEntrada,horaEntrada,codForn)value('Perfume Linda','22','189.99','2024/11/11','2024/08/08','18:25:00','1');
+
+insert into tbVendas(dataVenda,horaVenda,quantidade,codUsuario,codCli,codProduto)values('2024/08/16','19:59:59','5','2','1','1');
+insert into tbVendas(dataVenda,horaVenda,quantidade,codUsuario,codCli,codProduto)values('2024/08/16','19:00:59','3','2','2','4');
+insert into tbVendas(dataVenda,horaVenda,quantidade,codUsuario,codCli,codProduto)values('2024/08/16','20:01:59','1','2','2','3');
+
 --visualizando os registros das tabelas
 select * from tbFuncionarios;
 select * from tbFornecedores;
 select * from tbClientes;
+select * from tbUsuarios;
+select * from tbProdutos;
+select * from tbVendas;

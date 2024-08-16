@@ -108,3 +108,10 @@ select * from tbClientes;
 select * from tbUsuarios;
 select * from tbProdutos;
 select * from tbVendas;
+
+--alterando os registros das tabelas 
+update tbProdutos set descricao = 'Arroz',valor = '18.00' where codProduto = '4';
+update tbProdutos set descricao = 'Churros',valor = '18.00' where codProduto = '1';
+
+--visualizando depois de alterado
+select * from tbProdutos;
